@@ -9,4 +9,4 @@ while on:
         print('Você não entrou no sistema')
         on = False
     else:
-        print('digite apenas "entrar" ou "sair"')
+        print('\ndigite apenas "entrar" ou "sair"\n')
