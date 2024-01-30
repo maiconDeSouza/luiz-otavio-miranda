@@ -40,8 +40,5 @@ while calc:
     except Exception as error:
         print('Digite apenas números')
         continue
-
-    
-
-
-    
+else:
+    print('End')

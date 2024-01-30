@@ -1,0 +1,1 @@
+# tudo que foi aprendido no while como o uso de continue, break e else serve para o for
