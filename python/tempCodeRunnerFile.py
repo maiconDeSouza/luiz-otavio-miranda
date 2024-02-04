@@ -1,2 +1,1 @@
-nomes_3 = tuple(nomes_2)
-print(type(nomes_3))
+print(create_cpf_completed('732.759.560'))
