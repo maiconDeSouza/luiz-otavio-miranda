@@ -42,8 +42,8 @@ print('set_3 ->', set_3)
 set_1.clear()
 print('set_1 ->', set_1)
 
-set_3.discard('Dona Maia')
-set_3.discard('Luiz Otávio') # se ele não encontar não acontece nada
+print('teste dona maia', set_3.discard('Dona Maia'))
+print('teste luiz otavio', set_3.discard('Luiz Otávio')) # se ele não encontar não acontece nada
 print('set_3 ->', set_3)
 
 # Operadores úteis:
