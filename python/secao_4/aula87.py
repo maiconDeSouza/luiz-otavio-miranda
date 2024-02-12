@@ -5,4 +5,8 @@ lista = [
 ]
 
 for item in lista:
-    print(f'{item} -> {isinstance(item, tuple)}')
+    if isinstance(item, set):
+        item.add('Michael Jordan')
+        print(f'{item} -> {isinstance(item, set)}')
+    if isinstance(item, str):
+        print(f'{item.upper()} -> {isinstance(item, str)}')
