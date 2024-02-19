@@ -1,3 +1,5 @@
-for chave, grupo in grupos:
-    print(chave)
-    print(list(grupo))
+clear_terminal()
+    print('lista de tarefas:')
+    print()
+    print(*current_task_list, sep='\n')
+    print()

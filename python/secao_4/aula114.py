@@ -15,6 +15,8 @@ def recursiva(init=0, end=10):
         print(init)
         init += 1
         return recursiva(init, end)
+
+
 print('recursiva 1')
 r = recursiva(0, 10)
 print(r)
@@ -36,12 +38,13 @@ print()
 #         return recursiva_2(init, end)
 
 
-# recursiva_2(0, 1000) 
+# recursiva_2(0, 1000)
 
 def factorial(n):
     if n <= 1:
         return 1
     return n * factorial(n - 1)
+
 
 print('factorial')
 print('5! = ', factorial(5))
