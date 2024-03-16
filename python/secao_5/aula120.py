@@ -20,3 +20,4 @@ class Pessoa:
 p1 = Pessoa('Dante', 'Parrudo Kiko III')
 
 print(p1)
+print(p1.lastname)

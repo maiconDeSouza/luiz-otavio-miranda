@@ -1,5 +1,7 @@
 # Escopo da Classe e de Métodos da classe
 class Animal:
+    varivavel2 = 'Alguma coisa'
+
     def __init__(self, name) -> None:
         self.name = name
         varivavel = 'Alguma coisa'
@@ -14,3 +16,5 @@ leao = Animal('Leão')
 # print(leao.alguma_coisa()) -> vai gerar um erro, pois tem um valor que não está
 # no escopo desse método
 print(leao.se_alimentar('Macarrão instantâneo'))
+
+print(Animal.varivavel2)
