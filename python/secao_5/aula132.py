@@ -27,5 +27,4 @@ print(caneta.cor)
 print(caneta.cor)
 caneta.cor = 'Rosa'
 print(caneta.cor)
-
 # print(caneta.__cor)
