@@ -14,13 +14,21 @@
 
 class Foo:
     def __init__(self) -> None:
-        self.__protected = 'Isso é protegido'
+        self._public = 'Isso é público'
+        self._protected = 'Isso é protegido'
+        self.__private = 'Isso é privado!'
 
     def mostrar(self):
-        return self.__protected
+        return (self.public, self._protected, self.__private)
 
 
 f = Foo()
 
-# print(f.__protected)
+f.public = 'casa'
+f._protected = 'casa'
+f.__private = 'casa'
+
+
+# print(f_Foo.__private) desconfiguração de nome
 print(f.mostrar())
+# print(f.__private)
