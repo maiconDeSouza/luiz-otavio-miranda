@@ -1,3 +1,12 @@
+"""
+Entendendo self em classes Python;
+Classe - Molde (geralmente sem dados);
+Instância da Class (objeto) - Tem os dados;
+Uma classe pode gerar várias instâncias;
+Na classe o self é a própria instância.
+"""
+
+
 class Carro:
     def __init__(self, name, cor):
         self.name = name
@@ -18,9 +27,12 @@ class Carro:
 
 fusca = Carro('Fusca', 'azul')
 celta = Carro('Celta', 'vermelho')
+opala = Carro("Opala", "Preto")
 
 print(fusca.acelerar())
 print(fusca.acelerar(20))
 print(celta.descrever())
 print(Carro.acelerar(celta, 50))  # Aqui trecho importante
 print(fusca.parar())
+# Aqui o Luiz ótavio mostra o que se refere o self
+print(Carro.acelerar(opala))
