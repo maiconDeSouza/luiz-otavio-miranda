@@ -26,10 +26,33 @@ class FerramentaDeEscrever:
         self.nome = nome
 
     def escrever(self):
-        return f'{self.nome} está escrevendo!'
+        return f'
+        {self.nome} está escrevendo!'
 
 
 escritor = Escritor('Morgan Housel')
 caneta = FerramentaDeEscrever('Caneta Bic')
 escritor.ferramenta = caneta
 print(escritor.ferramenta.escrever())  # Caneta Bic está escrevendo!
+
+
+print("-------------------------------------")
+
+
+class Motorista:
+    def __init__(self, nome) -> None:
+        self.nome = nome
+
+
+class Carro:
+    def __init__(self, modelo) -> None:
+        self.modelo = modelo
+
+    def dirigir(self, motorista):
+        return f"O {motorista.nome} está dirigindo o {self.modelo}"
+
+
+motorista = Motorista("Dante")
+carro = Carro("Celta")
+
+print(carro.dirigir(motorista))

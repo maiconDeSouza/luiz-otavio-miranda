@@ -43,3 +43,32 @@ carrinho.listar_produtos()
 # Camiseta 20
 # Valor total é R$21.2
 print(carrinho.total())
+
+print(10 * "-")
+
+
+class Departamento:
+    def __init__(self, nome_departamento):
+        self.nome_departamento = nome_departamento
+        self.__funcionarios_do_departamento = []
+
+    def inserir_funcionario(self, *funcionario):
+        for f in funcionario:
+            self.__funcionarios_do_departamento.append(f.nome)
+
+    def listar_funcionario(self):
+        for f in self.__funcionarios_do_departamento:
+            print(f)
+
+
+class Funcionario:
+    def __init__(self, nome):
+        self.nome = nome
+
+
+vendas = Departamento("Vendas")
+f_1 = Funcionario("Joarez")
+f_2 = Funcionario("Alexandre")
+
+vendas.inserir_funcionario(f_1, f_2)
+vendas.listar_funcionario()
