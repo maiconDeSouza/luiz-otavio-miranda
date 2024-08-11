@@ -5,6 +5,9 @@ class Pessoa:
     def nome_completo(self):
         return self.__nome_completo
 
+    def falar_nome_classe(self):
+        return f"{self.nome_completo} {self.__class__.__name__}"
+
 
 class Endereco:
     def __init__(self, rua, numero):
@@ -25,3 +28,25 @@ class Cliente(Pessoa, Endereco):
 
 dante = Cliente("Dante", "Parrudo Kiko III", "Logo Ali", 23)
 print(dante.cliente())
+print(dante.falar_nome_classe())
+
+print(20 * "-")
+
+
+class Animal:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def emitir_som(self, som="fazendo um som."):
+        return f"{self.nome} está {som}"
+
+
+class Cachorro(Animal):
+    def __init__(self, nome, raca):
+        super().__init__(nome)
+        self.raca = raca
+
+
+pug = Cachorro("Pugzinho", "Pug")
+print(vars(pug))
+print(pug.emitir_som("latindo..."))

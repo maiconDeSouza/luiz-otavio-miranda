@@ -1,0 +1,6 @@
+10/08/2024 21:39:20 -> Error: De Permissão (LogFileMixin)
+10/08/2024 21:39:20 -> Sucess: MCN (LogFileMixin)
+10/08/2024 21:39:27 -> Error: De Permissão (LogFileMixin)
+10/08/2024 21:39:27 -> Sucess: MCN (LogFileMixin)
+10/08/2024 21:52:54 -> Sucess: iPHONE Ligado... (LogFileMixin)
+10/08/2024 21:53:37 -> Sucess: iPHONE Desligado... (LogFileMixin)
